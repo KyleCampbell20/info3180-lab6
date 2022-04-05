@@ -12,24 +12,19 @@
     <div class="card-group">
         <div v-for="article in articles" class="container_view"><br>
             <div class="card">
-                <div class="grid_view">
-                    <div class="card text-center" style="width:18rem">
-                        
-                        
-                        <img class="card-img-top" :src=" article.urlToImage " alt="Card image" width="250" height="200">
+                <div class="grid">
+                    
+                    <img class="card-img-top" :src=" article.urlToImage " alt="Card image" width="250" height="200">
                         
 
-                        <div class="card-body">
-                            <h4 class="card-title">{{ article.title }}</h4>
-                        </div>
-                    
-                        <div class="card-body">
-                            <p class="card-text">{{ article.description }}</p>
-                        </div>
-                    </div>       
-                            
-                </div>   
+                    <div class="card-body">
+                        <h4 class="card-title">{{ article.title }}</h4>
+                    </div>
                 
+                    <div class="card-body">
+                        <p class="card-text">{{ article.description }}</p>
+                    </div>
+                </div>       
             </div>
         </div> 
     </div>
@@ -84,8 +79,11 @@
 </script>
 
 <style>
-.grid_view{
-      margin: 5px;
-  }
+.card{
+    margin: 20px;
+    height: 650px;
+    width: 300px;
+}
+
 
 </style>
